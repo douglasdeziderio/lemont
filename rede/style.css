@@ -40,129 +40,23 @@
 .pri{
     background-color: black;
     margin: 100px 300px;
-    padding: 50px;
+    padding: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 100px;
     border: 10px double;
     border-radius: 50px;
     color: white;
 }
 
-.pri-titulo{
-    font-family: "Poppins", sans-serif;
-    font-size: 50px;
-    color: #00ff00;
-}
-
-.pri-subtitulo{
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-}
-
-.pri-texto{
-    padding-top: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.sec{
-    margin: 30px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sec-quadro{
-    margin: 100px 0px;
-    padding: 10px;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border: 10px solid;
+.conserto-img{
+    border: 5px solid white;
     border-radius: 50px;
 }
 
-.sec-quadro:hover{
-    background-color: black;
-    border: 10px solid #00ff00;
-}
-
-.sec-texto{
-    padding-bottom: 10px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    color: #00ff00;
-}
-
-.sec-bt{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.sec-bt-pri{
-    background-color: #00ff00;
-    padding: 10px;
-    border-radius: 50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    color: black;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.sec-bt-pri:hover{
-    transform: translateY(-5px);
-}
-
-.sec-bt-sec{
-    background-color: #ffa500;
-    padding: 10px;
-    border-radius: 50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    color: black;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.sec-bt-sec:hover{
-    transform: translateY(-5px);
-}
-
-.tec{
-    background-color: black;
-    margin: 130px 300px;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 10px double;
-    border-radius: 50px;
-    color: white;
-}
-
-.tec-img{
-    border: 5px solid #ffff;
-    border-radius: 50px;
-}
-
-.tec-div{
-    padding: 0 30px;
+.conserto-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,34 +64,32 @@
     gap: 10px;
 }
 
-.tec-texto{
-    padding-bottom: 10px;
+.conserto-div-titulo{
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
 }
 
-.tec-bt{
-    background-color: #00ff00;
+.conserto-div-texto{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+}
+
+.conserto-div-bt{
     padding: 10px;
     border-radius: 50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+    background-color: #00ff00;
     color: black;
-    transition: 0.3s;
-    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.tec-bt:hover{
+.conserto-div-bt:hover{
     transform: translateY(-5px);
-}
-
-.divisor{
-    background-color: black;
-    height: 10px;
 }
 
 .rodape{
@@ -258,7 +150,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1520px) {
     .menu-ham{
         display: flex;
     }
@@ -281,29 +173,12 @@
     .pri{
         margin: 5em 0;
         padding: 1em;
-        text-align: center;
-    }
-
-    .sec{
         flex-direction: column;
-    }
-    
-    .sec-quadro{
-        margin: 5em 0;
-        padding: 70px 130px;
         text-align: center;
     }
 
-    .sec-bt{
-        width: 1000px;
-    }
-
-    .tec{
-        margin: 5em 0;
-        padding: 1em;
-        text-align: center;
-        flex-direction: column;
-        gap: 10px;
+    .conserto-img{
+        width: 300px;
     }
 
     .rodape{
